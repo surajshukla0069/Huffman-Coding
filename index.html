@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huffman Encoder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🧠 Huffman Encoding & Decoding</h2>
+
+    <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+    <div class="btn-group">
+      <button onclick="encodeText()">Encode</button>
+      <button onclick="decodeText()">Decode</button>
+    </div>
+
+    <div class="output-box" id="encodedBox" style="display: none;">
+      <span class="label">📦 Encoded Output:</span>
+      <button class="copy-btn" onclick="copySimple('encodedOutput')">📋 Copy</button>
+      <div class="text-content" id="encodedOutput"></div>
+    </div>
+
+    <div class="output-box" id="decodedBox" style="display: none;">
+      <span class="label">📖 Decoded Output:</span>
+      <button class="copy-btn" onclick="copySimple('decodedOutput')">📋 Copy</button>
+      <div class="text-content" id="decodedOutput"></div>
+    </div>
+
+    <div class="output-box" id="compressionBox" style="display: none;">
+      <span class="label">📊 Compression Details:</span>
+      <div class="text-content" id="compressionOutput"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
